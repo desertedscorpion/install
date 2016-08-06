@@ -389,7 +389,7 @@ ptyjs(){
   echo :Installing pty.js
   
   if [ "$arch" == "x64" ] && [ "$os" == "linux" ] ; then
-    $DOWNLOAD https://github.com/c9/install/releases/download/bin/pty-4.4.6-$os-$arch.tar.gz \
+    $DOWNLOAD https://github.com/c9/install/releases/download/bin/pty-v4.4.6-$os-$arch.tar.gz \
       && rm -rf pty.js node_modules/pty.js \
       && tar -U -zxf pty-$NODE_VERSION-$os-$arch.tar.gz \
       && mv pty.js node_modules \
